@@ -6211,26 +6211,58 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-@media (max-width: 767px) {
-  header {
-    text-align: center; }
-  header img {
-    margin: auto; } }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
 
 header {
+  border: 1px solid black;
+  margin: 2px;
   display: flex;
-  flex-flow: row wrap;
-  background-color: indigo;
-  padding: 10px; }
+  flex-direction: column;
+  align-items: center;
+  height: 30%; }
 
-header h1 {
-  color: gold; }
+h1 {
+  font-size: 3rem; }
+
+.gameState {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  width: 80%; }
+
+.chalSelector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid green;
+  margin: 3px;
+  padding: 1%;
+  height: 100%; }
+
+.chalBtn {
+  border: 1px solid magenta;
+  width: 40%;
+  height: 40%;
+  margin: 2%; }
+
+.imgBtn {
+  max-height: 100%;
+  margin: auto; }
 
 footer {
-  background-color: black;
-  text-align: center;
-  color: #777; }
+  border: 1px solid blue; }
+
+@media (min-width: 992px) {
+  .chalSelector {
+    flex-wrap: nowrap;
+    align-items: center; } }
 
 body {
   background-color: aqua;
-  color: red; }
+  color: black; }
