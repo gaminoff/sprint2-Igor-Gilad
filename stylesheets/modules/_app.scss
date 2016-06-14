@@ -6,7 +6,7 @@ body {
 }
 
 .box {
-  border: 1px solid black ;
+  // border: 1px solid black ;
   margin: 2px ;
   display: flex ;
   flex-direction: column ;
@@ -32,7 +32,7 @@ h1 {
   flex-wrap: wrap ;
   justify-content: center ;
   align-content: center ;
-  border: 1px solid green ;
+  // border: 1px solid green ;
   margin: 3px ;
   padding: 1% ;
   height: 100% ;
@@ -40,9 +40,30 @@ h1 {
 
 .chalBtn {
   border: 1px solid magenta ;
+  // border-radius: 50% ;
+  // background: cadetblue ;
   width: 40% ;
   height: 40% ;
   margin: 2% ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  
+  &.disabled {
+    pointer-events: none ;
+    background: grey ;
+  }
+  
+  .gameLink {
+    // height: 100% ;
+    top: 50% ;
+    font-size: 3em ;
+    color: white ;
+    &:hover {
+      text-decoration: none ;
+    }
+  }
+  
 }
 
 .imgBtn {
@@ -51,7 +72,7 @@ h1 {
 }
 
 footer {
-  border: 1px solid blue ;
+  // border: 1px solid blue ;
   // position: absolute ;
   // bottom: 0px ;
 }

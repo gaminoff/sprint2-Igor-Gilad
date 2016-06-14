@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="stylesheets/main.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="body">
+<body class="body" onload="init()">
   
   <header class="box">
     <h1 class="text-center">PUKI'S HIDEAWAY</h1>
@@ -23,17 +23,28 @@
   </header>
   
   <div class="chalSelector">
-    <div class="chalBtn chal1"><img class="imgBtn img-responsive" src="img/monster/1.png"/></div>
-    <div class="chalBtn chal2">chal2</div>
+    <!--<div class="chalBtn text-center chal1"><a class="gameLink text-center" href="games/game1.html">GAME 1</a></div>-->
+    
+    <a class="chalBtn chal1 gameLink" href="games/game1.html" >
+      <img class="img-responsive imgBtn" src="img/monster/1.png" alt="">
+    </a>
+    
+    <div class="chalBtn text-center chal2 disabled"><a class="gameLink text-center" href="games/game2.html">GAME 2</a></div>
+    <div class="chalBtn text-center chal3 disabled"><a class="gameLink text-center" href="games/game3.html">GAME 3</a></div>
+    <div class="chalBtn text-center chal4 disabled"><a class="gameLink text-center" href="games/game4.html">GAME 4</a></div>
+    <!--<div class="chalBtn chal2">chal2</div>
     <div class="chalBtn chal3">chal3</div>
-    <div class="chalBtn chal4">chal4</div>
+    <div class="chalBtn chal4">chal4</div>-->
+    <!--<span class="glyphicon glyphicon-remove"></span>-->
   </div>
 
   <footer>
-    cofferights &copy; 2016  
+    cofferights &copy; IGOR-GILAD 2016  
   </footer>
 
+  
   <script src="lib/jquery/jquery.js"></script>
+  <script src="js/chal.js"></script>
   <script src="js/app.js"></script>
  
 </body>
