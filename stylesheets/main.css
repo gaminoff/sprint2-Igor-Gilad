@@ -56,13 +56,15 @@ footer {
     align-items: center; } }
 
 .game1 {
-  background-color: red; }
+  background-color: light green; }
 
 .game1 .head {
   border: 4px solid black; }
 
 .game1 .pictures {
-  display: flax; }
+  border: 4px solid black;
+  display: flex;
+  justify-content: space-around; }
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
