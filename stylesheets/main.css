@@ -1,4 +1,69 @@
 @charset "UTF-8";
+.body {
+  background-color: aqua;
+  color: black; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+
+header {
+  border: 1px solid black;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%; }
+
+h1 {
+  font-size: 3rem; }
+
+.gameState {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  width: 80%; }
+
+.chalSelector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid green;
+  margin: 3px;
+  padding: 1%;
+  height: 100%; }
+
+.chalBtn {
+  border: 1px solid magenta;
+  width: 40%;
+  height: 40%;
+  margin: 2%; }
+
+.imgBtn {
+  max-height: 100%;
+  margin: auto; }
+
+footer {
+  border: 1px solid blue; }
+
+@media (min-width: 992px) {
+  .chalSelector {
+    flex-wrap: nowrap;
+    align-items: center; } }
+
+.game1 {
+  background-color: red; }
+
+.game1 .head {
+  border: 4px solid black; }
+
+.game1 .pictures {
+  display: flax; }
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6210,59 +6275,3 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh; }
-
-header {
-  border: 1px solid black;
-  margin: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 30%; }
-
-h1 {
-  font-size: 3rem; }
-
-.gameState {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  height: 60%;
-  width: 80%; }
-
-.chalSelector {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  border: 1px solid green;
-  margin: 3px;
-  padding: 1%;
-  height: 100%; }
-
-.chalBtn {
-  border: 1px solid magenta;
-  width: 40%;
-  height: 40%;
-  margin: 2%; }
-
-.imgBtn {
-  max-height: 100%;
-  margin: auto; }
-
-footer {
-  border: 1px solid blue; }
-
-@media (min-width: 992px) {
-  .chalSelector {
-    flex-wrap: nowrap;
-    align-items: center; } }
-
-body {
-  background-color: aqua;
-  color: black; }
