@@ -32,15 +32,20 @@ $('.picture').html(gQuests[0].img);
 function answer(index){
 var pictureID = $('.picture img').attr("id");
 // console.log(pictureID);
-gQuests.forEach(function(gQuest){
-    console.log('pictureID',pictureID);
-    console.log('gQuest.id',gQuest.id);
-    console.log('index',index);
-    console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
-    if(pictureID==gQuest.id){
-        if(index==gQuest.correctOptIndex){
-            alert('yes');
-        }else alert('no');
-    }
-})
+    gQuests.forEach(function(gQuest,i){
+        console.log('pictureID',pictureID);
+        console.log('gQuest.id',gQuest.id);
+        console.log('index',index);
+        console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
+        if(pictureID==gQuest.id){
+            if(index==gQuest.correctOptIndex){
+                alert('yes');
+                $('.but1').html(gQuests[i+1].opts[0]);
+                $('.but2').html(gQuests[i+1].opts[1]);
+                $('.picture').html(gQuests[i+1].img);
+    	
+
+            }else alert('no');
+        }
+    })
 };
