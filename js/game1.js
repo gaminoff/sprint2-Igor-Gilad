@@ -31,8 +31,16 @@ $('.picture').html(gQuests[0].img);
 
 function answer(index){
 var pictureID = $('.picture img').attr("id");
-console.log(pictureID);
+// console.log(pictureID);
 gQuests.forEach(function(gQuest){
-    if(pictureID===gQuest.)
+    console.log('pictureID',pictureID);
+    console.log('gQuest.id',gQuest.id);
+    console.log('index',index);
+    console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
+    if(pictureID==gQuest.id){
+        if(index==gQuest.correctOptIndex){
+            alert('yes');
+        }else alert('no');
+    }
 })
 };
