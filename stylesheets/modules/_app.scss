@@ -5,7 +5,7 @@ body {
   height: 100vh ;
 }
 
-header {
+.box {
   border: 1px solid black ;
   margin: 2px ;
   display: flex ;
@@ -16,6 +16,7 @@ header {
 
 h1 {
   font-size: 3rem ;
+  font-family: cursive ;
 }
 
 .gameState {
