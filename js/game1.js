@@ -19,8 +19,8 @@ var gQuests = [
     }
 ];
 
-console.log(gQuests);
-console.log(gQuests[0].opts[0]);
+// console.log(gQuests);
+// console.log(gQuests[0].opts[0]);
 
 
 $(document).ready(function(){
@@ -33,10 +33,10 @@ function answer(index){
 var pictureID = $('.picture img').attr("id");
 // console.log(pictureID);
     gQuests.forEach(function(gQuest,i){
-        console.log('pictureID',pictureID);
-        console.log('gQuest.id',gQuest.id);
-        console.log('index',index);
-        console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
+        // console.log('pictureID',pictureID);
+        // console.log('gQuest.id',gQuest.id);
+        // console.log('index',index);
+        // console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
         if(pictureID==gQuest.id){
             if(index==gQuest.correctOptIndex){
                 if(i===gQuests.length-1){
