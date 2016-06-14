@@ -39,12 +39,16 @@ var pictureID = $('.picture img').attr("id");
         console.log('gQuest.correctOptIndex',gQuest.correctOptIndex);
         if(pictureID==gQuest.id){
             if(index==gQuest.correctOptIndex){
-                alert('yes');
-                $('.but1').html(gQuests[i+1].opts[0]);
-                $('.but2').html(gQuests[i+1].opts[1]);
-                $('.picture').html(gQuests[i+1].img);
-    	
-
+                if(i===gQuests.length-1){
+                    alert('yeeeeesssssss!! you did it ');
+                    $('.but1').html(gQuests[0].opts[0]);
+                    $('.but2').html(gQuests[0].opts[1]);
+                    $('.picture').html(gQuests[0].img);
+                }else
+                    alert('yes');
+                    $('.but1').html(gQuests[i+1].opts[0]);
+                    $('.but2').html(gQuests[i+1].opts[1]);
+                    $('.picture').html(gQuests[i+1].img);
             }else alert('no');
         }
     })
