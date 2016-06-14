@@ -3,18 +3,53 @@
 var gQuests = [
 
     {   id:1,
-        img:'<img id="1" src="img/layout/ca.png" />',
+        img:'<img id="1" class="img-responsive" src="imgGame1/14.png" />',
         opts:['abc','def'],
         correctOptIndex:0
     },
     {   id:2,
-        img:'<img id="2" src="img/layout/ca-white.png" />',
+        img:'<img id="2"  class="img-responsive" src="imgGame1/1.png" />',
         opts:['bca','edf'],
         correctOptIndex:1
     },
     {   id:3,
-        img:'<img id="3" src="img/layout/logo.png" />',
+        img:'<img id="3"  class="img-responsive" src="imgGame1/2.png" />',
         opts:['cba','fed'],
+        correctOptIndex:0
+    },
+    {   id:4,
+        img:'<img id="4"  class="img-responsive" src="imgGame1/3.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:5,
+        img:'<img id="5" src="img/layout/ca.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:6,
+        img:'<img id="6" src="img/layout/ca.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:7,
+        img:'<img id="7" src="img/layout/ca.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:8,
+        img:'<img id="8" src="img/layout/ca.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:9,
+        img:'<img id="9" src="img/layout/ca.png" />',
+        opts:['abc','def'],
+        correctOptIndex:0
+    },
+    {   id:10,
+        img:'<img id="10" src="img/layout/ca.png" />',
+        opts:['abc','def'],
         correctOptIndex:0
     }
 ];
