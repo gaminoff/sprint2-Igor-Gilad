@@ -1,9 +1,9 @@
-@import "../lib/lib";
-@import "modules/app";
 
 
-body {
+.body {
   background-color: aqua;
   color:black;
 
 }
+@import "modules/app";
+@import "../lib/lib";
