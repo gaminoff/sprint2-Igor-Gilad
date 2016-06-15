@@ -5,6 +5,21 @@
   <title>game 2</title>
   <link rel="stylesheet" href="stylesheets/main.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 <body class="game2">
     <main>
@@ -15,6 +30,12 @@
       </div>
     
         <div class="subsidiaryBoard">
+<div class="num1" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="num2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          
+
+        
+        </div>
         
 
  
