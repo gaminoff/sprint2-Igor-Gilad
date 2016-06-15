@@ -1,19 +1,15 @@
 
 'use strict';
-var KNIGHT=1;
-
-
-
 
 $(document).ready(function init(){
-    alert('hi');
+    // alert('hi');
 
-    var rows = [0,1,2,3,4,5,6,7,8,9,10].map(function(i){
+    var rows = [0].map(function(i){
 
         var currRowHtml = '<tr>';
 
-        var cells = [0,1,2,3,4,5,6,7,8,9,10].map(function(j){
-            var cellColor = ((i + j) % 2 === 0)? 'dark' : 'bright'; 
+        var cells = [0,1,2,3,4,5,6,7,8,9].map(function(j){
+            var cellColor = (j % 2 === 0)? 'dark' : 'bright'; 
             var pawn = getPawn(i, j);
 
             return '<td onclick="cellClicked(this)" ' + 
@@ -26,18 +22,31 @@ $(document).ready(function init(){
         return currRowHtml;
     });
 
+    
+     console.log(rows[0]);
 
-    // console.log(rows);
-    $('.board').html(rows.join(''))
+      $('.board').html(rows.join(''))
 
 
 });
 
 function getPawn(i, j) {
-    if (i === 4 && j === 4) return KNIGHT;
-    return '';
+    var num = (10*i + j)+1;
+    if(j===3) {
+        $('.num1').html((10*i + j)+1)
+    }
+    if(j===5) {
+        $('.num2').html((10*i + j)+1)
+    }
+        if(num===((10*i + 3)+1)|| num===((10*i + 5)+1)){
+            var res = "";
+        }else {
+            var res = num;
+        
+    }
+    
+    return res;
 }
-
 
 // function cellClicked(cell) {
 //     console.log('cell: ', cell);

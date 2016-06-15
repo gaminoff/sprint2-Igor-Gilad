@@ -77,6 +77,54 @@ h1 {
   display: flex;
   justify-content: space-around; }
 
+.game2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.game2 main {
+  border: 1px solid black;
+  width: 735px;
+  height: 506px;
+  display: flex; }
+
+.game2 main .board {
+  width: 500px;
+  height: 502px; }
+
+.game2 main .board td {
+  border: 1px solid black;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  text-align: center; }
+
+.game2 main .board td.dark {
+  background-color: lightgreen; }
+
+.game2 main .board td.bright {
+  background-color: white; }
+
+.game2 main .subsidiaryBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid green;
+  width: 235px;
+  height: 506px; }
+
+.game2 main .subsidiaryBoard .num1 {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px; }
+
+.game2 main .subsidiaryBoard .num2 {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px; }
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
