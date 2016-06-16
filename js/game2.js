@@ -49,7 +49,7 @@ function getNum(i, j) {
          
              var res = '';
 
-        }else {
+        } else {
             var res = num;
         
     }
@@ -69,6 +69,7 @@ function getNum(i, j) {
         }
 
         function drop(ev) {
+            console.log(ev);
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
             ev.target.appendChild(document.getElementById(data));

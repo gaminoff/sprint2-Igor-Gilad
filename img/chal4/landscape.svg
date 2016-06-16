@@ -1,0 +1,76 @@
+<?xml version="1.0"?><svg width="2271.4375" height="1665.7122" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient4641">
+   <stop stop-color="#fcaf3e" id="stop4643" offset="0"/>
+   <stop stop-color="#ffce86" id="stop4645" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4368">
+   <stop stop-color="#69d007" offset="0" id="stop4370"/>
+   <stop stop-color="#4e9a06" stop-opacity="0" offset="1" id="stop4372"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4336">
+   <stop stop-color="#458905" id="stop4338" offset="0"/>
+   <stop stop-color="#4e9a06" stop-opacity="0" id="stop4340" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4328">
+   <stop stop-color="#8f5902" id="stop4330" offset="0"/>
+   <stop stop-color="#724701" id="stop4332" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4238">
+   <stop stop-color="#55a800" id="stop4240" offset="0"/>
+   <stop stop-color="#74e400" id="stop4242" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4191">
+   <stop stop-color="#007900" id="stop4193" offset="0"/>
+   <stop stop-color="#008400" stop-opacity="0" id="stop4195" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4180">
+   <stop stop-color="#00a400" id="stop4182" offset="0"/>
+   <stop stop-color="#00a400" stop-opacity="0" id="stop4184" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4103">
+   <stop stop-color="#00acf4" id="stop4105" offset="0"/>
+   <stop stop-color="#a6e5ff" id="stop4107" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="1.000097" x2="0.474214" y1="-0.189418" x1="0.474214" id="linearGradient4109" xlink:href="#linearGradient4103"/>
+  <linearGradient y2="0.524211" x2="0.490848" y1="-0.488398" x1="0.492076" id="linearGradient4200" xlink:href="#linearGradient4191"/>
+  <clipPath id="clipPath4234" clipPathUnits="userSpaceOnUse">
+   <path fill="#9cf000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="path4236" d="m-701.794556,85.707787c-11.65564,0 -21.0625,5.752144 -21.0625,12.875l0,830.031227c73.681519,-9.907227 153.852417,-15.0625 237.156128,-15.0625c343.817139,0 484.305725,44.117554 822.843781,235.71875c342.857147,194.045776 775.268036,461.424072 -891.406281,464.28125c-60.104736,0.103271 -116.483887,-9.398071 -168.593628,-25.937378l0,150.96875c0,7.122803 9.40686,12.843994 21.0625,12.843628l2229.343628,0c11.655518,0 21.03125,-5.720825 21.03125,-12.843628l0,-640.000122l0,-67.40625l0,-932.593727c0,-7.122856 -9.375732,-12.875 -21.03125,-12.875l-2229.343628,0z"/>
+  </clipPath>
+  <clipPath id="clipPath4253" clipPathUnits="userSpaceOnUse">
+   <path fill="url(#linearGradient4257)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="path4255" d="m272.491058,62.850647c-11.655579,0 -21.0625,5.752136 -21.0625,12.874992l0,830.031258l0,169.968689l0,640c0,7.122925 9.406952,12.843994 21.0625,12.84375l2229.343903,0c11.655273,0 21.031006,-5.720947 21.031006,-12.84375l0,-640l0,-67.40625l0,-932.593697c0,-7.122856 -9.375732,-12.874992 -21.031006,-12.874992l-2229.343903,0z"/>
+  </clipPath>
+  <linearGradient y2="0.615842" x2="0.474216" y1="-0.116636" x1="0.474216" id="linearGradient4257" xlink:href="#linearGradient4103"/>
+  <linearGradient y2="0.581632" x2="0.357287" y1="-0.120598" x1="0.357287" id="linearGradient4261" xlink:href="#linearGradient4180"/>
+  <linearGradient y2="1.425902" x2="0.510673" y1="-0.070132" x1="0.5" id="linearGradient4263" xlink:href="#linearGradient4238"/>
+  <linearGradient y2="Infinity" x2="0.65567" y1="Infinity" x1="0.762445" id="linearGradient4382" xlink:href="#linearGradient4336"/>
+  <linearGradient y2="-Infinity" x2="0.552103" y1="-Infinity" x1="0.43915" id="linearGradient4384" xlink:href="#linearGradient4368"/>
+  <linearGradient y2="Infinity" x2="0.683021" y1="-Infinity" x1="0.109724" id="linearGradient4386" xlink:href="#linearGradient4368"/>
+  <linearGradient y2="-Infinity" x2="0.659074" y1="Infinity" x1="0.037881" id="linearGradient4388" xlink:href="#linearGradient4336"/>
+  <linearGradient y2="0.5" x2="0.999999" y1="0.5" x1="0.5" id="linearGradient4390" xlink:href="#linearGradient4328"/>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.3896636,0.7071731,-0.555426,1.0914658,234.03392,455.11869)" r="284.19949" fy="-27.637817" fx="-640" cy="-27.637817" cx="-640" id="radialGradient4647" xlink:href="#linearGradient4641"/>
+  <clipPath id="clipPath5381" clipPathUnits="userSpaceOnUse">
+   <path opacity="0.893333" fill="#fdfdfd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="path5383" d="m798.213013,156.399796c-48.512512,0 -90.277039,11.929932 -108.884583,29.029007c-4.26886,-0.29483 -8.609497,-0.457611 -13.019836,-0.457581c-57.891602,0 -104.884521,26.515869 -104.884521,59.185257c0,28.591507 35.995605,52.464554 83.786011,57.979874c14.848328,30.919434 81.280579,54.263428 160.924805,54.263458c90.548401,0 164.042603,-30.168274 164.042603,-67.343781l-0.117676,-1.082581c29.333679,-9.232056 48.520508,-24.501526 48.520508,-41.774582l-0.421509,-4.386139c-5.100586,-26.509354 -53.967407,-46.620636 -113.325806,-46.64064c-11.480103,-22.433395 -59.405518,-38.772324 -116.619995,-38.772293z"/>
+  </clipPath>
+  <clipPath id="clipPath5495" clipPathUnits="userSpaceOnUse">
+   <path opacity="0.893333" fill="#fdfdfd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" d="m1832.498657,64.971237c-48.512451,0 -90.276978,11.929924 -108.884521,29.028992c-4.268921,-0.294823 -8.609497,-0.457611 -13.019897,-0.457565c-57.891602,0 -104.884399,26.515854 -104.884399,59.185242c0,28.591507 35.995483,52.464569 83.786011,57.979889c14.848267,30.919434 81.280518,54.263397 160.924805,54.263428c90.54834,0 164.042603,-30.168243 164.042603,-67.343781l-0.117798,-1.082565c29.33374,-9.23204 48.520508,-24.501541 48.520508,-41.774582l-0.421631,-4.386139c-5.100586,-26.509354 -53.967285,-46.620636 -113.325684,-46.640633c-11.480103,-22.433403 -59.405396,-38.772331 -116.619995,-38.772285z" id="path5497"/>
+  </clipPath>
+  <clipPath id="clipPath5671" clipPathUnits="userSpaceOnUse">
+   <rect fill="url(#linearGradient5675)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" ry="21.597332" rx="35.341087" y="-42.65996" x="-59.71918" height="1722.9872" width="3815.5286" id="rect5673"/>
+  </clipPath>
+  <linearGradient y2="1.000097" x2="0.474214" y1="-0.189418" x1="0.474214" id="linearGradient5675" xlink:href="#linearGradient4103"/>
+  <clipPath id="clipPath5677" clipPathUnits="userSpaceOnUse">
+   <rect fill="url(#linearGradient5681)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="rect5679" width="3599.5803" height="1625.4709" x="-51.16412" y="-30.42346" rx="33.340881" ry="20.374983"/>
+  </clipPath>
+  <linearGradient y2="1.000097" x2="0.474214" y1="-0.189418" x1="0.474214" id="linearGradient5681" xlink:href="#linearGradient4103"/>
+ </defs>
+ <metadata id="metadata7">image/svg+xmlSummer LandscapeCarlos AsmatsummergreenlandscapetreecloudsA simple summer landscape featuring green grass, a blue sky and white clouds.</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g externalResourcesRequired="false" display="inline" id="layer2">
+   <rect fill="url(#linearGradient4109)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" ry="12.857142" rx="21.03896" y="0" x="0.00891" height="1025.7142" width="2271.4285" id="rect2160"/>
+   <path fill="url(#linearGradient4263)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" id="path4202" d="m1208.109985,811.629028c-215.177002,0 -379.22699,34.240967 -506.192993,86.406982c-139.692993,-48.926025 -256.890991,-130.199036 -454.760986,-130.199036c-83.303009,0 -183.475407,18.489014 -250.489336,81.730042l0,809.973022c0,7.119995 9.40692,12.839966 21.06253,12.839966l2229.350878,0c11.649902,0 21.030029,-5.719971 21.030029,-12.839966l13.329834,-797.411011c-171.079834,-55.737 -347.509888,69.839966 -512.459961,96.718994c-164.949951,26.877991 -304.030029,-147.218994 -560.869995,-147.218994z"/>
+   <path fill="url(#linearGradient4261)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" clip-path="url(#clipPath4253)" id="path4111" d="m1043.342285,1066.876465c375.20459,164.93457 -684.278656,500.361938 -891.428619,464.285889c-207.149937,-36.07605 -148.848606,-739.333069 -149.047496,-890.952881c-0.19043,-148.014557 -169.531606,124.285889 174.285548,124.285889c343.817703,0 490.985916,137.446472 866.190567,302.381104z"/>
+  </g>
+ </g>
+</svg>

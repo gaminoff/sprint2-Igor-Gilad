@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  background-color: #ffce9d;
+  background-color: deepskyblue;
   color: black; }
 
 body {
@@ -21,11 +21,34 @@ h1 {
   font-family: cursive; }
 
 .gameState {
-  border: 1px solid red;
+  padding: 3px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 60%;
   width: 80%; }
+
+.gameState .levelToggle {
+  font-size: 1.5rem; }
+
+.gameState .levelToggle input[type="radio"] {
+  visibility: hidden; }
+
+.gameState .levelToggle input[type="radio"]:checked + label {
+  background: #44f;
+  color: white;
+  padding: 0px 2px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5); }
+
+.gameState .progressBar {
+  text-align: center;
+  width: 150px;
+  height: 22px;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  background: linear-gradient(to right, dodgerblue 50%, deepskyblue 50%); }
 
 .chalSelector {
   display: flex;
@@ -37,7 +60,8 @@ h1 {
   height: 100%; }
 
 .chalBtn {
-  border: 1px solid magenta;
+  background: #fdca39;
+  border-radius: 50%;
   width: 40%;
   height: 40%;
   margin: 2%;
@@ -231,6 +255,53 @@ h1 {
 .chal3 footer {
   display: flex;
   justify-content: space-between; }
+
+.chal4 {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: cursive;
+  background: url(../img/chal4/landscape.svg) no-repeat top left;
+  background-size: cover; }
+
+.chal4 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  font-size: 6vw;
+  font-weight: bold;
+  color: white; }
+
+.chal4 .gameCont {
+  height: 100%;
+  width: 100%;
+  margin: 3px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.chal4 .gameCont .pictureCont {
+  height: 100%;
+  position: relative;
+  padding: 5px; }
+
+.chal4 .gameCont .pictureCont .flower {
+  position: absolute;
+  height: 20%;
+  bottom: 0px;
+  margin: 3px; }
+
+.chal4 .gameCont .optionsCont {
+  height: 10%;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.6); }
+
+.chal4 footer {
+  width: 100%; }
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)

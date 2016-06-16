@@ -4,7 +4,7 @@
 var gCorrectCounter = 0 ;
 
 function init() {
-    var level = 1; 
+    var level = +localStorage.getItem('level');
     document.querySelector('.currLevel').innerHTML = level ;
     renderPuzzle(getLevelParam(level));
     $('.piece').draggable({ revert: true });
@@ -14,8 +14,8 @@ function init() {
 
 
 function makeDroppable() {
-    var droppables = document.querySelectorAll('.col-xs-3');
-    droppables.forEach(function (slot, i) { 
+    var slots = document.querySelectorAll('.col-xs-3');
+    slots.forEach(function (slot, i) { 
         var slotData = $(slot).attr('data-value');  
         $(slot).droppable({ drop: handleDrop,
                             accept: '.val'+slotData });
@@ -85,6 +85,7 @@ function handleDrop( event, ui ) {
     // console.log('correct: ', gCorrectCounter);
     if ( gCorrectCounter === 16 ) {
         console.log('Win!');
+        reportSolved('chal3');
     }
 }
     
