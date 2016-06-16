@@ -23,7 +23,7 @@ function updateChalBtns() {
     
     gChals.forEach(function (chal) {
         if (chal.isSolved) {
-           $('.'+chal.id).next().removeClass('disabled') ;
+           $('.'+chal.id+'Btn').next().removeClass('disabled') ;
            
         }
     });

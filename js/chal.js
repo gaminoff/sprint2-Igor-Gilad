@@ -33,8 +33,6 @@ function reportSolved(chalId){
     console.log(chalId);
     // if (!localStorage.getItem('gChals'))
     gChals = JSON.parse(localStorage.gChals);
-    
-    
     var chalObj = gChals.filter(function (chal) {
         return chal.id === chalId ;
     });

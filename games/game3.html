@@ -2,22 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>game 3</title>
-  <link rel="stylesheet" href="stylesheets/main.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PUZZLE MASTER</title>
+  <link rel="stylesheet" href="../stylesheets/main.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
-<body class="game3">
- 
- 
-    <a href="../index.html" >BACK</a>   
-    <!--onclick="reportSolved('game1')"-->
-    
-    <button onclick="reportSolved('chal3')">WIN</button>
+<body class="chal3" onload="init()">
+  
+  <header>
+    <div class="chalTitle">
+      <h1>PUZZLE MASTER</h1>
+    </div>
 
- 
- 
-   
-  <!--<script src="lib/jquery/jquery.js"></script>-->
+  </header>
+  
+  <div class="chalBoard">
+    
+    <div class="instructions">
+      <span>DRAG THE CORRECT ANSWER TO EACH PIECE</span>
+    </div>
+    
+    <div class="puzzleCont">
+      <div class="hidingPieces"></div>
+      <img class="puzzleImg" src="../img/chal3/puzzlePic.jpg" alt="puzzle picture"/>
+    </div>
+    
+    <div class="piecesCont"></div>
+  </div>
+  
+  <footer>
+    <span>
+      <a href="../index.html" >BACK</a>
+      <button onclick="reportSolved('chal3')">WIN</button>
+    </span>
+    <span>CoffeeRight &copy; 2016</span>
+    <span>level: <span class="currLevel"></span> </span>
+  </footer>
+
+
+  <script src="../lib/jquery/jquery.js"></script>
+  <script src="../lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <script src="../lib/jquery.ui.touch-punch.min.js"></script>
   <script src="../js/chal.js"></script>
+  <script src="../js/chal3.js"></script>
+ 
 </body>
 </html>
