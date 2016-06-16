@@ -22,11 +22,14 @@ $(document).ready(function init(){
         return currRowHtml;
     });
 
+      $('.board').html(rows.join(''));
      $('.answer').draggable({ revert: true });
     //  console.log(rows[0]);
 
-      $('.board').html(rows.join(''));
-          $("[data-col="+5+"]").droppable();
+   $("[data-col="+5+"]").droppable({drop : function(event, ui) {
+                $(this).append(ui.draggable);
+}});
+
      
           console.log($("[data-col="+5+"]"))
 
@@ -96,3 +99,7 @@ function getNum(i, j) {
 // function checkPosibolMovment(date, innerHtml){
     
 // }
+function handleDropEvent( event, ui ){
+    // ui.draggable.draggable({ revertDuration: 0 });
+     $("[data-col="+5+"]").remove() ;
+}
