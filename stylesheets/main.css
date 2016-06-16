@@ -115,12 +115,12 @@ h1 {
   width: 235px;
   height: 506px; }
 
-.game2 main .subsidiaryBoard .num1 {
+.game2 main .subsidiaryBoard .answer1 {
   border: 1px solid black;
   width: 50px;
   height: 50px; }
 
-.game2 main .subsidiaryBoard .num2 {
+.game2 main .subsidiaryBoard .answer2 {
   border: 1px solid black;
   width: 50px;
   height: 50px; }

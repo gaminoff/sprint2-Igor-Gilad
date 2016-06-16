@@ -22,13 +22,22 @@ $(document).ready(function init(){
         return currRowHtml;
     });
 
-    
+     $('.answer').draggable({ revert: true });
     //  console.log(rows[0]);
 
-      $('.board').html(rows.join(''))
-          $("[data-col="+5+"]").attr("ondrop", "drop(event)")
-          $("[data-col="+5+"]").attr("ondragover", "allowDrop(event)")
+      $('.board').html(rows.join(''));
+          $("[data-col="+5+"]").droppable();
+     
           console.log($("[data-col="+5+"]"))
+
+//           function makeDroppable() {
+//     var droppables = document.querySelectorAll('.col-xs-3');
+//     droppables.forEach(function (slot, i) { 
+//         var slotData = $(slot).attr('data-value');  
+//         $(slot).droppable({ drop: handleDrop,
+//                             accept: '.val'+slotData });
+//     });
+// }
 
 // ondrop="drop(event)" ondragover="allowDrop(event)"
 
@@ -37,11 +46,11 @@ $(document).ready(function init(){
 function getNum(i, j) {
     var num = (10*i + j)+1;
     if(j===3) {
-        $('.num1').html((10*i + j)+1)
+        $('.answer1').html((10*i + j)+1)
 
     }
     if(j===5) {
-        $('.num2').html((10*i + j)+1)
+        $('.answer2').html((10*i + j)+1)
     }
         if(num===((10*i + 3)+1)|| num===((10*i + 5)+1)){
         
@@ -60,19 +69,19 @@ function getNum(i, j) {
 
 
 
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
+        // function allowDrop(ev) {
+        //     ev.preventDefault();
+        // }
 
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
+        // function drag(ev) {
+        //     ev.dataTransfer.setData("text", ev.target.id);
+        // }
 
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
+        // function drop(ev) {
+        //     ev.preventDefault();
+        //     var data = ev.dataTransfer.getData("text");
+        //     ev.target.appendChild(document.getElementById(data));
+        // }
 
 // function cellClicked(cell) {
 //     console.log('cell: ', cell);
