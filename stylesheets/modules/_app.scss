@@ -20,11 +20,39 @@ h1 {
 }
 
 .gameState {
-  border: 1px solid red ;
+  padding: 3px ;
+  // border: 1px solid red ;
   display: flex ;
-  justify-content: space-between ;
+  flex-direction: column ;
+  justify-content: space-around ;
+  align-items: center ;
   height: 60% ;
   width: 80% ;
+  
+  .levelToggle {
+    font-size: 1.5rem ;
+    
+    input[type="radio"] { 
+      visibility: hidden ;
+    
+      &:checked + label {
+        background: #44f ;
+        color: white ;
+        padding: 0px 2px ;
+        border-radius: 3px ;
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5) ;
+      }
+    }
+  }
+  
+  .progressBar {
+    text-align: center ;
+    width: 150px ;
+    height: 22px ;
+    border: 2px solid dodgerblue;
+    border-radius: 5px ;
+    background: linear-gradient(to right, dodgerblue 50%, deepskyblue 50%);
+  }
 }
 
 .chalSelector {
@@ -39,9 +67,9 @@ h1 {
 }
 
 .chalBtn {
-  border: 1px solid magenta ;
-  // border-radius: 50% ;
-  // background: cadetblue ;
+  // border: 1px solid magenta ;
+  background: #fdca39 ;
+  border-radius: 50% ;
   width: 40% ;
   height: 40% ;
   margin: 2% ;
@@ -107,6 +135,6 @@ footer {
 
 
 @import "_game1";
-@import 'game2';
+@import '_game2';
 @import '_game3';
-@import 'game4';
+@import '_game4';

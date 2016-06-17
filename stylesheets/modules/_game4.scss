@@ -1,0 +1,62 @@
+.chal4 {
+    padding: 3px ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-between ;
+    align-items: center ;
+    // background: lightskyblue ;
+    font-family: cursive ;
+    background: url(../img/chal4/landscape.svg) no-repeat top left;
+    background-size: cover ; 
+    
+    header {
+        display: flex ;
+        justify-content: center ;
+        align-items: center ;
+        height: 10% ;
+        width: 100% ;
+        // border: 1px solid red ;
+        font-size: 6vw ;
+        font-weight: bold ;
+        color: white ;
+    }
+    
+    
+    .gameCont {
+        height: 100% ;
+        width: 100% ;
+        margin: 3px 0px ;
+        // border: 1px solid black;
+        display: flex ;
+        flex-direction: column ;
+        justify-content: space-between ;
+        
+        .pictureCont {
+            // border: 1px solid blue ;
+            height: 100% ;
+            position: relative ;
+            padding: 5px ;
+            
+            .flower {
+                position: absolute ;
+                height: 20% ;
+                bottom: 0px ;
+                margin: 3px ;
+            }
+        }
+    
+        .optionsCont {
+            
+            height: 10% ;
+            width: 100% ;
+            background: rgba(20, 20, 20, 0.6);
+        }
+    }
+    
+    footer {
+        width: 100% ;
+        // border: 1px solid green ;
+    }
+    
+    
+}

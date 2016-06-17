@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>I like Coding</title>
+  <title>Coding is my Life</title>
   <link rel="stylesheet" href="stylesheets/main.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -12,12 +12,12 @@
     <h1 class="text-center">PUKI'S HIDEAWAY</h1>
     <div class="gameState">
       <div class="levelToggle">
-        <input type="radio"/><label>easy</label>
-        <input type="radio"/><label>intemediate</label>
-        <input type="radio"/><label>expert</label>
+          <input type="radio" onchange="updateLevelToLS(this.value)" id="lev1" value=1 name="optradio"><label for="lev1">Easy</label>
+          <input type="radio" onchange="updateLevelToLS(this.value)" id="lev2" value=2 name="optradio"><label for="lev2">Intermediate</label>  
+          <input type="radio" onchange="updateLevelToLS(this.value)" id="lev3" value=3 name="optradio"><label for="lev3">Expert</label>
       </div>
       <div class="progressBar">
-        progress
+        PROGRESS
       </div>
     </div>
   </header>
@@ -25,10 +25,11 @@
   <div class="chalSelector">
     <!--<div class="chalBtn text-center chal1"><a class="gameLink text-center" href="games/game1.html">GAME 1</a></div>-->
     
-    <a class="chalBtn chal1Btn gameLink" href="games/game1.html" >
+    <!--<a class="chalBtn chal1Btn gameLink" href="games/game1.html" >
       <img class="img-responsive imgBtn" src="img/monster/1.png" alt="">
-    </a>
+    </a>-->
     
+    <div class="chalBtn text-center chal1Btn         "><a class="gameLink text-center" href="games/game1.html">GAME 1</a></div>
     <div class="chalBtn text-center chal2Btn disabled"><a class="gameLink text-center" href="games/game2.html">GAME 2</a></div>
     <div class="chalBtn text-center chal3Btn disabled"><a class="gameLink text-center" href="games/game3.html">GAME 3</a></div>
     <div class="chalBtn text-center chal4Btn disabled"><a class="gameLink text-center" href="games/game4.html">GAME 4</a></div>
