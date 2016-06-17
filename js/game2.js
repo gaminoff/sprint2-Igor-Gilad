@@ -23,11 +23,16 @@ $(document).ready(function init(){
     });
 
       $('.board').html(rows.join(''));
-     $('.answer').draggable({ revert: true });
+     $('.answer').draggable({revert:true });  // scope:"drop",
     //  console.log(rows[0]);
 
-   $("[data-col="+5+"]").droppable({drop : function(event, ui) {
-                $(this).append(ui.draggable);
+   $("[data-col="+5+"]").droppable({ accept : '.answer', drop : function(event, ui) { // scope:"drop"  
+
+            // $("#test").html()
+        //   $("[data-col="+5+"]").appendChild(ul.draggable);
+                //  $(this).append(ui.draggable);
+               $(this).html(ui.draggable.html());
+               ui.draggable.hide();
 }});
 
      
