@@ -7,21 +7,22 @@ var empty2;
 var rowShown = 0;
 
 $(document).ready(function init() {
+
     renderBoard();
-    alert('igor');
     $('tr').hide();
     $("[data-ro=" + 0 + "]").show();
     forward();
-    dragAndDrop(empty1, empty2);
+    dragAndDrop();
     console.log($("[data-col=" + 5 + "]"));
 });
 
 function renderBoard() {
+
     var rows = gArrRows.map(function (i) {
         var currRowHtml = '<tr  data-ro="' + i + '">';
         var cells = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (j) {
             var cellColor = (j % 2 === 0) ? 'dark' : 'bright';
-            var num = getNum(i, j, empty1, empty2);
+            var num = getNum(i, j);
             return '<td onclick="cellClicked(this)" ' +
                 ' data-row="' + i + '" data-col="' + j + '" ' +
                 ' class="' + cellColor + ' cell' + j + '">' + num + '</td>';
@@ -34,23 +35,26 @@ function renderBoard() {
 }
 
 function forward() {
+
     getRandomCells();
-    getEmptySpaces(empty1, empty2);
-    renderAnswers(empty1, empty2);
+    getEmptySpaces();
+    renderAnswers();
     $("[data-ro=" + rowShown + "]").show();
 }
 
 function getNum(i, j) {
+
     var num = (10 * i + j) + 1;
     return num;
 }
 
-function getEmptySpaces(empty1, empty2) {
+function getEmptySpaces() {
+
     $("[data-col=" + empty1 + "][data-row=" + rowShown + "]").html('');
     $("[data-col=" + empty2 + "][data-row=" + rowShown + "]").html('');
 }
 
-function renderAnswers(empty1, empty2) {
+function renderAnswers() {
 
     $('.answer1').html(empty1 + 1 + 10 * rowShown);
     $('.answer2').html(empty2 + 1 + 10 * rowShown);
@@ -59,7 +63,8 @@ function renderAnswers(empty1, empty2) {
 
 }
 
-function dragAndDrop(empty1, empty2) {
+function dragAndDrop() {
+
     var check = 0;
     $('.answer').draggable({ scope: rowShown, revert: true });
     $("[data-col=" + empty1 + "][data-row=" + rowShown + "]").droppable({
@@ -81,8 +86,8 @@ function dragAndDrop(empty1, empty2) {
 }
 
 function checkEndOfStage(check) {
+
     if (check === 2) {
-        // console.log(gArrRows);
         rowShown++;
         if (rowShown < 10) {
             forward();
@@ -93,11 +98,10 @@ function checkEndOfStage(check) {
 }
 
 function getRandomCells() {
+
     empty1 = parseInt(Math.random() * 10);
     empty2 = parseInt(Math.random() * 10);
     while (empty1 === empty2) {
         empty2 = parseInt(Math.random() * 10);
     }
-    console.log(empty1);
-    console.log(empty2);
 }
