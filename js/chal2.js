@@ -1,7 +1,6 @@
 
 'use strict';
 
-var gArrRows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var empty1;
 var empty2;
 var rowShown = 0;
@@ -18,7 +17,7 @@ $(document).ready(function init() {
 
 function renderBoard() {
 
-    var rows = gArrRows.map(function (i) {
+    var rows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (i) {
         var currRowHtml = '<tr  data-ro="' + i + '">';
         var cells = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (j) {
             var cellColor = (j % 2 === 0) ? 'dark' : 'bright';
