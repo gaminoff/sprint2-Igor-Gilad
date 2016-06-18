@@ -1,16 +1,16 @@
-.game1 {
+.chal1 {
     background-color:light green;
 
-    .head{ border: 4px solid black}
-    .pictures{
+    .head {
+         border: 4px solid black;
+    }
+    
+    .pictures {
        border: 4px solid black;
        display:flex;
        justify-content:space-around;
 
-   } 
-//  img {
-//   display: inline-block;
-//   height: auto;
-//   max-width: 100%;
-// } 
+    } 
+    
+ 
 }
