@@ -1,5 +1,5 @@
 .chal4 {
-    padding: 3px ;
+    padding: 3px 0px ;
     display: flex ;
     flex-direction: column ;
     justify-content: space-between ;
@@ -39,9 +39,11 @@
             
             .flower {
                 position: absolute ;
-                height: 20% ;
+                height: 10% ;
                 bottom: 0px ;
                 margin: 3px ;
+                // filter: FlipH ;
+                transform: scaleX(-1);
             }
         }
     
@@ -54,6 +56,9 @@
     }
     
     footer {
+        padding: 0px 3px ;
+        display: flex ;
+        justify-content: space-between ;
         width: 100% ;
         // border: 1px solid green ;
     }
