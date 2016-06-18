@@ -4,61 +4,61 @@ var gQuests = [
 
     {
         id: 1,
-        img: '<img id="1" class="img-responsive" src="imgGame1/1.png" />',
+        img: '<img id="1" class="img-responsive" src="../imgGame1/1.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 2,
-        img: '<img id="2"  class="img-responsive" src="imgGame1/2.png" />',
+        img: '<img id="2"  class="img-responsive" src="../imgGame1/2.png" />',
         opts: ['bca', 'edf'],
         correctOptIndex: 1
     },
     {
         id: 3,
-        img: '<img id="3"  class="img-responsive" src="imgGame1/3.png" />',
+        img: '<img id="3"  class="img-responsive" src="../imgGame1/3.png" />',
         opts: ['cba', 'fed'],
         correctOptIndex: 0
     },
     {
         id: 4,
-        img: '<img id="4"  class="img-responsive" src="imgGame1/4.png" />',
+        img: '<img id="4"  class="img-responsive" src="../imgGame1/4.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 5,
-        img: '<img id="5"  class="img-responsive" src="imgGame1/5.png" />',
+        img: '<img id="5"  class="img-responsive" src="../imgGame1/5.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 6,
-        img: '<img id="6"  class="img-responsive" src="imgGame1/6.png" />',
+        img: '<img id="6"  class="img-responsive" src="../imgGame1/6.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 7,
-        img: '<img id="7"  class="img-responsive" src="imgGame1/7.png" />',
+        img: '<img id="7"  class="img-responsive" src="../imgGame1/7.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 8,
-        img: '<img id="8"  class="img-responsive" src="imgGame1/8.png" />',
+        img: '<img id="8"  class="img-responsive" src="../imgGame1/8.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 9,
-        img: '<img id="9"  class="img-responsive" src="imgGame1/9.png" />',
+        img: '<img id="9"  class="img-responsive" src="../imgGame1/9.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     },
     {
         id: 10,
-        img: '<img id="10"  class="img-responsive" src="imgGame1/10.png" />',
+        img: '<img id="10"  class="img-responsive" src="../imgGame1/10.png" />',
         opts: ['abc', 'def'],
         correctOptIndex: 0
     }
