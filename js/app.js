@@ -1,9 +1,9 @@
 'use strict';
 
-var gState = {
-    playerName: 'Muki',
-    currChalId: 'game1'
-};
+// var gState = {
+//     playerName: 'Muki',
+//     currChalId: 'game1'
+// };
 
 
 function init() {
@@ -21,12 +21,14 @@ function init() {
     console.log('gChals: ', gChals);
     checkRadioBtn(levelFromLocal);
     updateChalBtns();
+    
+    if (gChals[gChals.length-1].isSolved) gameCompleted();
 }
 
 
 function updateChalBtns() {
     gChals.forEach(function (chal) {
-        if (chal.isSolved) $('.'+chal.id+'Btn').next().removeClass('disabled') ;    
+        if (chal.isSolved) $('.'+chal.id+'Btn').next().removeClass('disabled') ;  
     });  
 }
 
@@ -40,4 +42,22 @@ function updateLevelToLS(elRadio) {
 
 function checkRadioBtn(level) {
     $('#lev'+level).prop('checked', true);
+}
+
+
+
+function gameCompleted() {
+    setTimeout(function () {
+        $('.chalSelector').css({'display':'none'});
+        $('.gameComplete').css({'display':'flex'});
+    }, 2000);       
+}
+
+
+
+function resetGame() {
+    gChals.forEach(function (chal) {
+        chal.isSolved = false ; 
+    });
+    localStorage.gChals = JSON.stringify(gChals);
 }

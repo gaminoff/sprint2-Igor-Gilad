@@ -41,3 +41,19 @@ function reportSolved(chalId){
     chalObj[0].isSolved = true ;
     localStorage.gChals = JSON.stringify(gChals);
 }
+
+
+
+function chalCompleted(chal) {
+    reportSolved(chal);
+    var msgs = ['GREAT JOB!', 'WELL DONE!', 'YOU ROCK!', 'VERY GOOD!', 'EXCELLENT!'];
+    setTimeout(function () {
+        var htmlStr = '<div class="gameSolvedPopup"><p>' + msgs[parseInt(Math.random() * msgs.length)] + '</p>\
+                    <a class="btn btn-primary btn-lg" href="'+ chal +'.html">PLAY AGAIN</a> \
+                    <a class="backToMain btn btn-success btn-lg" \
+                    href="../index.html">BACK TO HOME PAGE</a></div>' ;
+        
+        document.querySelector('.'+chal).innerHTML += htmlStr ;
+    }, 2000);
+    
+}

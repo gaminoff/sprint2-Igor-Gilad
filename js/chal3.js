@@ -85,7 +85,8 @@ function handleDrop( event, ui ) {
     // console.log('correct: ', gCorrectCounter);
     if ( gCorrectCounter === 16 ) {
         console.log('Win!');
-        reportSolved('chal3');
+
+        chalCompleted('chal3');
     }
 }
     
